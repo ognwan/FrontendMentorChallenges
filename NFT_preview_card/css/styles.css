@@ -1,0 +1,114 @@
+/* ===============================
+   Author: {Gerald}
+   Date:   {Jul 04, 2022}
+
+
+/* General */
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #0D1A2D;
+	color: white;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#container{
+	background:#152640;
+	width: 300px;
+	margin: auto;
+	padding: 10px;
+	border: 10px solid #152640;
+	border-radius: 20px;
+	
+}
+#logo, #eye-icon-backdrop{
+	border-radius: 8px;
+}
+
+#eye-icon-backdrop{
+	position: absolute;
+	background-color: #00A6C090;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+#eye-icon{
+	width: 60px;
+	height: 50px;
+	position: relative;
+}
+.logo-container{
+	position: relative;
+}
+.logo-container:hover #eye-icon-backdrop{
+	visibility: visible;
+	cursor: pointer;
+}
+#eth{
+	color: #00FFF8;
+	float: left;
+}
+
+#clock{
+	color: #8BACD9;
+	float: right;
+}
+#creation img{
+	float: left;
+	margin-right: 15px;
+	border: 2px solid white;
+	border-radius: 20px;
+	padding: 5px;
+}
+ #creation p, header p{
+	margin: center;
+	padding-top: 10px;
+	color: #8BACD9;
+}
+#creation em, .attribution h6 a{
+	color: white;
+	font-style: normal;
+}
+#creation em:hover, h1:hover, .attribution h6 a:hover{
+	color: #12C6CD;
+	cursor: pointer
+
+}
+hr{
+	border: solid 2px #21334B;
+}
+
+/* Footer */
+h6, footer{
+	padding: 1px 0;
+	margin: 0;
+	text-align: center;
+	color: #3C5271;
+}
+
+
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
