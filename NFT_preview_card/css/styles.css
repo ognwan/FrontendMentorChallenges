@@ -81,7 +81,7 @@ body{
 	color: white;
 	font-style: normal;
 }
-#creation em:hover, h1:hover, .attribution h6 a:hover{
+#creation em:hover, h2:hover, .attribution h6 a:hover{
 	color: #12C6CD;
 	cursor: pointer
 
