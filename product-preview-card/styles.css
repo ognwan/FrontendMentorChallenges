@@ -1,0 +1,140 @@
+/* ===============================
+   Author: {Gerald}
+   Date:   {Jul 05, 2022}
+
+
+/* General */
+
+
+html, body{
+	height: 100%;
+	margin: auto;
+	padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(30, 38%, 92%) no-repeat;
+    font-size: 14px;
+    font-weight: 100;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+.card_container{
+    display: flex;
+    height: 450px;
+
+}
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.description{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-weight: 900px;
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+}
+.img_container img.mobile_img{
+    display: none;
+}
+
+.img_container{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+}
+.img_container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.text_container {
+    width: 320px;
+    height: 100%;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+}
+.text_container_wrapper{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.discount{
+    font-size: 40px;
+    color: #39846A;
+    font-family: 'Fraunces', serif;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin: 15px 0 ;
+}
+.regular{
+    font-size: 20px;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.446);
+    font-weight: 100;
+    font-family: 'Fraunces', serif;
+    margin-left: 20px;
+}
+button{
+	background-color: #3D8168;
+    width: 260px;
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+}
+
+
+/* Footer */
+footer{
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(228, 45%, 44%);
+}
+.attribution{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        align-items: center;
+    }
+    .card_container{
+        flex-direction: column;
+        width: 350px;
+        height:auto ;
+    }
+    .img_container img.mobile_img{
+        display: flex;
+        /* border-radius: 10px; */
+        
+    }
+    .img_container{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px  10px 0 0;
+        overflow: hidden;
+    }
+    .text_container {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        
+    }
+    .img_container img.desktop_img{
+        display: none;
+    }
+    button{
+        width: 100%;
+    }
+}

@@ -16,7 +16,7 @@ body{
 	display: flex;
 	justify-content: center;
 	font-family: 'Outfit', sans-serif;
-	
+	align-items: center;
 }
 #container{
 	background:#152640;
@@ -25,6 +25,7 @@ body{
 	padding: 10px;
 	border: 10px solid #152640;
 	border-radius: 20px;
+	
 	
 }
 
