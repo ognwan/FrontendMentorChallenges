@@ -1,0 +1,105 @@
+html, body{
+	height: 100%;
+	margin: auto;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    background: hsl(225, 100%, 94%) url(./images/pattern-background-desktop.svg) no-repeat;
+   font-size: 16px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    /* background: red; */
+    border-radius: 10px ;
+    overflow: hidden;
+    background-color: white;
+}
+.text_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    padding: 10px 0;
+}
+.text_wrapper h1{
+    margin: 10px 0;
+}
+.img_container{
+    width: 100%;
+}
+.img_container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.payment_plan{
+    background-color: #F8F9FE;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.payment_plan .plan{
+    /* display: flex;
+    flex-direction: column; */
+   width: 60%;
+}
+.payment_plan .plan p{
+    padding: 0;
+   margin: 0;
+}
+.payment_plan .music-icon{
+    width: 20%;
+}
+.payment_plan .change{
+    width: 20%;
+}
+.btn-proceed{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+}
+.btn-cancel{
+    border: none;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.attribution{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 11px;
+
+}
+.bold_text{
+    font-weight: bold;
+    font-size: 18px;
+}
+.text_color_grey{
+    color: hsl(228, 6%, 68%);
+}
+.change a:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+button.btn-cancel:hover{
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+button.btn-proceed:hover{
+    background-color: #766CF1;
+    cursor: pointer;
+}
