@@ -11,6 +11,7 @@ body{
     align-items: center;
     background: hsl(225, 100%, 94%) url(./images/pattern-background-desktop.svg) no-repeat;
    font-size: 16px;
+   background-size: contain;
 }
 .container{
     display: flex;
