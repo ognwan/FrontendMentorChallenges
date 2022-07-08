@@ -26,25 +26,31 @@ html, body{
 }
 .cars p{
     line-height: 1.7;
+    margin-bottom: 100px;
 }
 .cars h1{
     font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
 }
-.cars button{
-    margin-top: 80px;
+.cars .learn_more_btn{
     border-radius: 20px;
     padding: 15px;
     width:150px;
-    border: none;
+    border: 1px solid;
     cursor: pointer;
+    background-color: white;
+}
+.cars .learn_more_btn:link{
+    text-decoration: none;
 }
 .sedan{
     background-color: hsl(31, 77%, 52%);
 }
-.sedan button{
+.sedan .learn_more_btn{
     color: hsl(31, 77%, 52%);
 }
-.sedan button:hover{
+
+.sedan .learn_more_btn:hover{
     color: white;
     background-color: hsl(31, 77%, 52%);
     border: solid 1px white;
@@ -52,10 +58,10 @@ html, body{
 .suv{
     background-color: hsl(184, 100%, 22%);
 }
-.suv button{
+.suv .learn_more_btn{
     color: hsl(184, 100%, 22%);
  }
- .suv button:hover{
+ .suv .learn_more_btn:hover{
     background-color: hsl(184, 100%, 22%);
     border: solid 1px white;
     color: white;
@@ -63,10 +69,10 @@ html, body{
 .luxury{
     background-color: hsl(179, 100%, 13%);
 }
-.luxury button{
+.luxury .learn_more_btn{
     color: hsl(179, 100%, 13%);
 }
-.luxury button:hover{
+.luxury .learn_more_btn:hover{
     background-color: hsl(179, 100%, 13%);
     color: white;
     border: solid 1px white;
@@ -75,15 +81,12 @@ html, body{
 .attribution{
     font-size: 12px;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 940px){
     .container{
-        display: flex;
         flex-direction: column;
-        margin: 20px;
     }
-    .cars button{
-        margin-top: 10px;
-        width:130px;
+    .cars p{
+        margin-bottom: 50px;
     }
 
 }
