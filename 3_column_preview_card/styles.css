@@ -1,0 +1,76 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: brown; */
+}
+.container{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cars{
+    width: 200px;
+    color: hsl(0, 0%, 95%);
+    padding: 50px;
+}
+.cars p{
+    line-height: 1.7;
+}
+.cars h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+.cars button{
+    margin-top: 80px;
+    border-radius: 20px;
+    padding: 15px;
+    width:150px;
+    border: none;
+    cursor: pointer;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+.sedan button{
+    color: hsl(31, 77%, 52%);
+}
+.sedan button:hover{
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+    border: solid 1px white;
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.suv button{
+    color: hsl(184, 100%, 22%);
+ }
+ .suv button:hover{
+    background-color: hsl(184, 100%, 22%);
+    border: solid 1px white;
+    color: white;
+ }
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+.luxury button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border: solid 1px white;
+    
+}
+.attribution{
+    font-size: 12px;
+}
