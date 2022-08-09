@@ -1,0 +1,80 @@
+
+body{
+    background: #ddd;
+    padding: 10px;
+}
+.comment_card, .reply_card {
+    background: white;
+    padding: 17px;
+    border-radius: 8px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+.reply_card{
+    width: 285px;
+    margin-left: 15px;
+}
+.reply_body a {
+    text-decoration: none;
+    color: rgb(65, 52, 207);
+}
+
+
+.comment_header, .reply_header {
+    display: flex;
+    align-items: center;
+}
+
+.comment_header h3, .reply_header h3 {
+    margin: 0 10px;
+
+}
+
+.comment_header img, .reply_header img {
+    height: 30px;
+}
+
+
+.comment_footer, .reply_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.minus,
+.plus {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    display: inline-block;
+    text-align: center;
+    cursor:pointer;
+    color: rgb(171, 171, 197);
+}
+.btn{
+    background: transparent;
+    border: none;
+    color:  rgb(65, 52, 207);
+    cursor:pointer;
+}
+
+.comment_counter, .reply_counter{
+    background: #ddd;
+    width: auto;
+    border: none;
+    border-radius: 6px;
+    color: rgb(65, 52, 207);
+}
+.reply_wrapper{
+border-left: ridge;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
