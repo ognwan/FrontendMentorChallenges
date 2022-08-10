@@ -4,12 +4,14 @@
 
 
 /* General */
-html, body{
+html,
+body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
 }
-body{
+
+body {
 	background: #0D1A2D;
 	color: white;
 	width: 100%;
@@ -18,22 +20,22 @@ body{
 	font-family: 'Outfit', sans-serif;
 	align-items: center;
 }
-#container{
-	background:#152640;
+
+#container {
+	background: #152640;
 	width: 300px;
 	margin: auto;
 	padding: 10px;
 	border: 10px solid #152640;
 	border-radius: 20px;
-	
-	
 }
 
-#logo, #eye-icon-backdrop{
+#logo,
+#eye-icon-backdrop {
 	border-radius: 8px;
 }
 
-#eye-icon-backdrop{
+#eye-icon-backdrop {
 	position: absolute;
 	background-color: #00A6C090;
 	width: 100%;
@@ -44,54 +46,67 @@ body{
 	align-items: center;
 	visibility: hidden;
 }
-#eye-icon{
+
+#eye-icon {
 	width: 60px;
 	height: 50px;
 	position: relative;
 }
-.logo-container{
+
+.logo-container {
 	position: relative;
 }
-.logo-container:hover #eye-icon-backdrop{
+
+.logo-container:hover #eye-icon-backdrop {
 	visibility: visible;
 	cursor: pointer;
 }
-#eth{
+
+#eth {
 	color: #00FFF8;
 	float: left;
 }
 
-#clock{
+#clock {
 	color: #8BACD9;
 	float: right;
 }
-#creation img{
+
+#creation img {
 	float: left;
 	margin-right: 15px;
 	border: 2px solid white;
 	border-radius: 20px;
 	padding: 5px;
 }
- #creation p, header p{
+
+#creation p,
+header p {
 	margin: center;
 	padding-top: 10px;
 	color: #8BACD9;
 }
-#creation em, .attribution h6 a{
+
+#creation em,
+.attribution h6 a {
 	color: white;
 	font-style: normal;
 }
-#creation em:hover, h2:hover, .attribution h6 a:hover{
+
+#creation em:hover,
+h2:hover,
+.attribution h6 a:hover {
 	color: #12C6CD;
 	cursor: pointer
-
 }
-hr{
+
+hr {
 	border: solid 2px #21334B;
 }
 
 /* Footer */
-h6, footer{
+h6,
+footer {
 	padding: 1px 0;
 	margin: 0;
 	text-align: center;
@@ -108,11 +123,15 @@ h6, footer{
 	content: "";
 	clear: both;
 	height: 0;
-	}
-* html .group             { zoom: 1; } /* IE6 */
-*:first-child+html .group { zoom: 1; } /* IE7 */
+}
 
+* html .group {
+	zoom: 1;
+}
 
+/* IE6 */
+*:first-child+html .group {
+	zoom: 1;
+}
 
-
-
+/* IE7 */
