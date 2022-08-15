@@ -79,14 +79,27 @@ async function populateObj() {
             const scorePlus = document.createElement('span');
             scorePlus.className += "plus"
             const replyButton = document.createElement('button')
-            replyButton.className = "btn"
+            replyButton.className = "btn reply"
+            const replyButtonWrapper = document.createElement('div')
+            const editButton = document.createElement('button')
+            editButton.className = "btn edit"
+            const deleteButton = document.createElement('button')
+            deleteButton.className = "btn delete"
 
             replyHeader.appendChild(image)
             replyHeader.appendChild(name)
             replyHeader.appendChild(createdAt)
             replyBody.appendChild(content)
             replyFooter.appendChild(replyCounter)
-            replyFooter.appendChild(replyButton)
+            replyFooter.appendChild(replyButtonWrapper)
+            if (dataSet.currentUser.username === reply.user.username) {
+                replyButtonWrapper.appendChild(deleteButton)
+                replyButtonWrapper.appendChild(editButton)
+            }
+            else {
+                replyButtonWrapper.appendChild(replyButton)
+            }
+
             replyCounter.appendChild(scoreMinus)
             replyCounter.appendChild(score)
             replyCounter.appendChild(scorePlus)
@@ -104,16 +117,17 @@ async function populateObj() {
             score.innerText = reply.score
             scoreMinus.innerText = "-"
             scorePlus.innerText = "+"
-            replyButton.innerHTML = '<img src="./images/icon-reply.svg" alt=""> Reply'
+            if (dataSet.currentUser.username === reply.user.username) {
+                editButton.innerHTML = '<img src="./images/icon-edit.svg" alt=""> edit'
+                deleteButton.innerHTML = '<img src="./images/icon-delete.svg" alt=""> delete'
+            } else {
+                replyButton.innerHTML = '<img src="./images/icon-reply.svg" alt=""> Reply'
+
+            }
         }
         commentWrapper.appendChild(divWrap)
     }
-
+    document.getElementById('add_comment_image').src = dataSet.currentUser.image.png
 
 }
 populateObj()
-
-function click() {
-    const replyInput = document.createElement('input')
-    replyInput.type = "text"
-}

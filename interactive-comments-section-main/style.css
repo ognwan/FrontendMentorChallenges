@@ -3,16 +3,17 @@ body{
     background: #ddd;
     padding: 10px;
 }
-.comment_card, .reply_card {
+
+.comment_card, .reply_card, .add_comment {
     background: white;
     padding: 17px;
     border-radius: 8px;
-    width: 300px;
+    width: 500px;
     margin-bottom: 15px;
 }
 .reply_card{
-    width: 285px;
-    margin-left: 15px;
+    width: 465px;
+    margin-left: 35px;
 }
 .reply_body a {
     text-decoration: none;
@@ -30,7 +31,7 @@ body{
 
 }
 
-.comment_header img, .reply_header img {
+.comment_header img, .reply_header img, .add_comment img{
     height: 30px;
 }
 
@@ -61,6 +62,7 @@ body{
 
 .comment_counter, .reply_counter{
     background: #ddd;
+ 
     width: auto;
     border: none;
     border-radius: 6px;
@@ -77,4 +79,34 @@ border-left: ridge;
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+.add_comment textarea {
+    width: 100%;
+    resize: vertical;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.add_comment div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.send_btn{
+    background: rgb(65, 52, 207);;
+    color:  white;
+    cursor:pointer;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+@media (max-width: 400px) {
+    .comment_card, .add_comment {
+        width: 300px;
+    }  
+    .reply_card{
+        width: 265px;
+    }
 }
